@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                   "Hello " + document.getElementById("user_input").value + " World";
+    }
+  </script>
+
+  </head>
+<body>
+
+  <form>
+    <label><b>Enter your name</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+   <p><span id='display'></span></p>
+</body>
+</html>
